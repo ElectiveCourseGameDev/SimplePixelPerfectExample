@@ -51,6 +51,7 @@ namespace CollisionRacer
         private void setGame()
         {
             CarPlayer player = new CarPlayer(this, new Vector2(160,400), _carPlayerTexture2D);
+            player.Scale = new Vector2(2,2);
             GameObjects.Add(player);
 
         }
@@ -85,7 +86,7 @@ namespace CollisionRacer
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             _spriteBatch.Begin();
-            _spriteBatch.Draw(_track1, new Vector2(0,0), Color.White);
+            _spriteBatch.Draw(_track1, new Vector2(0, 0), Color.White);
             foreach (SpriteObject spriteObject in GameObjects)
             {
                 spriteObject.Draw(gameTime, _spriteBatch);

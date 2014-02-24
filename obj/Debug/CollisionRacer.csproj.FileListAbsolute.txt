@@ -49,3 +49,11 @@ c:\users\ebva.rhs\documents\visual studio 2013\Projects\MonoGameCollisionRacer\C
 c:\users\ebva.rhs\documents\visual studio 2013\Projects\MonoGameCollisionRacer\CollisionRacer\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 c:\users\ebva.rhs\documents\visual studio 2013\Projects\MonoGameCollisionRacer\CollisionRacer\obj\Debug\ProjectArchitectures.txt
 c:\users\ebva.rhs\documents\visual studio 2013\Projects\MonoGameCollisionRacer\CollisionRacer\bin\Windows8\Debug\Content\car.xnb
+c:\users\ebva.rhs\documents\visual studio 2013\Projects\MonoGameCollisionRacer\CollisionRacer\obj\Debug\SharpDX\layout.resfiles
+c:\users\ebva.rhs\documents\visual studio 2013\Projects\MonoGameCollisionRacer\CollisionRacer\obj\Debug\SharpDX\layout.resfiles.intermediate
+c:\users\ebva.rhs\documents\visual studio 2013\Projects\MonoGameCollisionRacer\CollisionRacer\obj\Debug\SharpDX\Resources.resfiles
+c:\users\ebva.rhs\documents\visual studio 2013\Projects\MonoGameCollisionRacer\CollisionRacer\obj\Debug\SharpDX\Resources.resfiles.intermediate
+c:\users\ebva.rhs\documents\visual studio 2013\Projects\MonoGameCollisionRacer\CollisionRacer\obj\Debug\SharpDX\pri.resfiles
+c:\users\ebva.rhs\documents\visual studio 2013\Projects\MonoGameCollisionRacer\CollisionRacer\obj\Debug\SharpDX\pri.resfiles.intermediate
+c:\users\ebva.rhs\documents\visual studio 2013\Projects\MonoGameCollisionRacer\CollisionRacer\obj\Debug\SharpDX\priconfig.xml
+c:\users\ebva.rhs\documents\visual studio 2013\Projects\MonoGameCollisionRacer\CollisionRacer\obj\Debug\SharpDX\priconfig.xml.intermediate
