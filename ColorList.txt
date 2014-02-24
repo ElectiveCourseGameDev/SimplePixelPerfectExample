@@ -1,0 +1,5 @@
+﻿'magic' colors:
+red		255,0,0			Stop
+yellow	255,255,0		Slow
+blue	0,0,255			Slide
+white	255,255,255		Standard
