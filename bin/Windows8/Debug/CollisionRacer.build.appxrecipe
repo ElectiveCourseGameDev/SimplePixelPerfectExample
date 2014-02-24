@@ -44,6 +44,9 @@
     <AppxPackagedFile Include="c:\users\ebva.rhs\documents\visual studio 2013\Projects\MonoGameCollisionRacer\CollisionRacer\Content\PixelPerfectCollision.xnb">
       <PackagePath>Content\PixelPerfectCollision.xnb</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\ebva.rhs\documents\visual studio 2013\Projects\MonoGameCollisionRacer\CollisionRacer\Content\car.xnb">
+      <PackagePath>Content\car.xnb</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="c:\users\ebva.rhs\documents\visual studio 2013\Projects\MonoGameCollisionRacer\CollisionRacer\Assets\Logo.png">
       <PackagePath>Assets\Logo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>

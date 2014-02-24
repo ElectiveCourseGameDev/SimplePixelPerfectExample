@@ -12,6 +12,9 @@ namespace CollisionRacer
         GraphicsDeviceManager _graphics;
         SpriteBatch _spriteBatch;
 
+        private Texture2D _carPlayerTexture2D;
+        private Texture2D _track1;
+
         public CollisionRacerGame()
         {
             _graphics = new GraphicsDeviceManager(this);
@@ -39,8 +42,17 @@ namespace CollisionRacer
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             _spriteBatch = new SpriteBatch(GraphicsDevice);
+            _track1 = Content.Load<Texture2D>("PixelPerfectCollision");
+            _carPlayerTexture2D = Content.Load<Texture2D>("car");
 
-            // TODO: use this.Content to load your game content here
+            setGame();
+        }
+
+        private void setGame()
+        {
+            CarPlayer player = new CarPlayer(this, new Vector2(160,400), _carPlayerTexture2D);
+            GameObjects.Add(player);
+
         }
 
         /// <summary>
@@ -60,7 +72,7 @@ namespace CollisionRacer
         protected override void Update(GameTime gameTime)
         {
             // TODO: Add your update logic here
-
+            UpdateAll(gameTime);
             base.Update(gameTime);
         }
 
@@ -72,8 +84,13 @@ namespace CollisionRacer
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
-            // TODO: Add your drawing code here
-
+            _spriteBatch.Begin();
+            _spriteBatch.Draw(_track1, new Vector2(0,0), Color.White);
+            foreach (SpriteObject spriteObject in GameObjects)
+            {
+                spriteObject.Draw(gameTime, _spriteBatch);
+            }
+            _spriteBatch.End();
             base.Draw(gameTime);
         }
     }

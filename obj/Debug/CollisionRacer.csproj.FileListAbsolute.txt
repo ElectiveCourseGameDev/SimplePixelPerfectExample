@@ -48,3 +48,4 @@ c:\users\ebva.rhs\documents\visual studio 2013\Projects\MonoGameCollisionRacer\C
 c:\users\ebva.rhs\documents\visual studio 2013\Projects\MonoGameCollisionRacer\CollisionRacer\obj\Debug\qualifiers.txt.intermediate
 c:\users\ebva.rhs\documents\visual studio 2013\Projects\MonoGameCollisionRacer\CollisionRacer\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 c:\users\ebva.rhs\documents\visual studio 2013\Projects\MonoGameCollisionRacer\CollisionRacer\obj\Debug\ProjectArchitectures.txt
+c:\users\ebva.rhs\documents\visual studio 2013\Projects\MonoGameCollisionRacer\CollisionRacer\bin\Windows8\Debug\Content\car.xnb

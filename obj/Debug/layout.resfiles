@@ -6,5 +6,6 @@ App.xaml
 Common\StandardStyles.xaml
 GamePage.xaml
 ColorList.txt
+Content\car.xnb
 Content\PixelPerfectCollision.xnb
 PixelPerfectCollision.png
