@@ -13,12 +13,12 @@ namespace CollisionRacer
     class CarPlayer : SpriteObject
     {
         private KeyboardState _keyboard;
-        private Vector2 _position;
+        //private Vector2 _position;
 
         public float Direction { get; set; }
         public float Speed { get; set; }
 
-        public Vector2 Position { get { return _position; } set { _position = value; } }
+        //public Vector2 Position { get { return _position; } set { _position = value; } }
 
          public CarPlayer(GameHost game)
             : base(game)
@@ -44,16 +44,18 @@ namespace CollisionRacer
             SpriteTexture = texture;
         }
 
+        
+
         public override void Update(GameTime gameTime)
         {
             _keyboard = Keyboard.GetState();
 
             if (_keyboard.IsKeyDown(Keys.Up))
             {
-                Speed += 0.05f;
-                _position.X += Speed * (float)Math.Cos(Direction);
-                _position.Y += Speed * (float)Math.Sin(Direction);
-
+                Speed += 0.03f;
+                PositionX += Speed * (float)Math.Cos(Direction);
+                PositionY += Speed * (float)Math.Sin(Direction);
+                
                 if (_keyboard.IsKeyDown(Keys.Left))
                 {
                     Direction -= 0.04f;
@@ -66,8 +68,8 @@ namespace CollisionRacer
 
             else if (_keyboard.IsKeyDown(Keys.Down))
             {
-                _position.X -= Speed * (float)Math.Cos(Direction);
-                _position.Y -= Speed * (float)Math.Sin(Direction);
+                PositionX -= Speed * (float)Math.Cos(Direction);
+                PositionY -= Speed * (float)Math.Sin(Direction);
                 if (_keyboard.IsKeyDown(Keys.Left))
                 {
                     Direction += 0.02f;
@@ -86,7 +88,7 @@ namespace CollisionRacer
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
             
-            spriteBatch.Draw(SpriteTexture, _position, new Rectangle((int)PositionX, (int)PositionY, SpriteTexture.Width, SpriteTexture.Height), Color.White, Direction, new Vector2(SpriteTexture.Width / 4, SpriteTexture.Height / 2), 2f, SpriteEffects.None, 0f);
+            spriteBatch.Draw(SpriteTexture, Position, new Rectangle((int)PositionX, (int)PositionY, SpriteTexture.Width, SpriteTexture.Height), Color.White, Direction, new Vector2(SpriteTexture.Width / 4, SpriteTexture.Height / 2), 1f, SpriteEffects.None, 0f);
         }
 
     }

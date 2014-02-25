@@ -12,9 +12,17 @@ namespace CollisionRacer
         GraphicsDeviceManager _graphics;
         SpriteBatch _spriteBatch;
 
-        private Texture2D _carPlayerTexture2D;
-        private Texture2D _track1;
+        private Texture2D _playerTexture;
+        private Texture2D _trackTexture;
 
+        private CarPlayer player;
+
+        private Color _colorMagicRed = new Color(255,0,0);
+
+        public MonoLog Log;
+        private SpriteFont _spriteFont;
+
+        private Color[,] _TrackColors;
         public CollisionRacerGame()
         {
             _graphics = new GraphicsDeviceManager(this);
@@ -42,17 +50,24 @@ namespace CollisionRacer
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             _spriteBatch = new SpriteBatch(GraphicsDevice);
-            _track1 = Content.Load<Texture2D>("PixelPerfectCollision");
-            _carPlayerTexture2D = Content.Load<Texture2D>("car");
-
+            _trackTexture = Content.Load<Texture2D>("PixelPerfectCollision");
+            _playerTexture = Content.Load<Texture2D>("car");
+            _spriteFont = Content.Load<SpriteFont>("MonoLog");
             setGame();
         }
 
         private void setGame()
         {
-            CarPlayer player = new CarPlayer(this, new Vector2(160,400), _carPlayerTexture2D);
-            player.Scale = new Vector2(2,2);
+            player = new CarPlayer(this, new Vector2(160,400), _playerTexture);
+            //player.Scale = new Vector2(2,2);
             GameObjects.Add(player);
+
+            Log = new MonoLog(this, _spriteFont, Color.Black);
+            GameObjects.Add(Log);
+
+            //Log.Write(player.PositionX.ToString());
+
+            _TrackColors = TextureTo2DArray(_playerTexture);
 
         }
 
@@ -72,10 +87,37 @@ namespace CollisionRacer
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
-            // TODO: Add your update logic here
+            //Log.Write("COLLISION WITH RED PIXEL :-)");
+            ColorCheck();
+            //Color c = _TrackColors[160, 400];
+            //Log.Write("Color: " + c.R + "," + c.G + "," +c.B  );
             UpdateAll(gameTime);
             base.Update(gameTime);
         }
+
+        private void ColorCheck()
+        {
+            Color color = _TrackColors[(int)player.PositionY, (int)player.PositionX];
+            //Color color = _TrackColors[(int)player.PositionX, (int)player.PositionY];
+            if (color.Equals(_colorMagicRed))
+            {
+                Log.Write("new color(" + color.R + "," + color.G + "," +color.B +")");
+            }
+        }
+
+        private Color[,] TextureTo2DArray(Texture2D texture)
+        {
+            Color[] colors1D = new Color[texture.Width * texture.Height];
+            texture.GetData(colors1D);
+
+            Color[,] colors2D = new Color[texture.Width, texture.Height];
+            for (int x = 0; x < texture.Width; x++)
+                for (int y = 0; y < texture.Height; y++)
+                    colors2D[x, y] = colors1D[x + y * texture.Width];
+
+            return colors2D;
+        }
+
 
         /// <summary>
         /// This is called when the game should draw itself.
@@ -86,7 +128,7 @@ namespace CollisionRacer
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             _spriteBatch.Begin();
-            _spriteBatch.Draw(_track1, new Vector2(0, 0), Color.White);
+            _spriteBatch.Draw(_trackTexture, new Vector2(0, 0), Color.White);
             foreach (SpriteObject spriteObject in GameObjects)
             {
                 spriteObject.Draw(gameTime, _spriteBatch);
@@ -94,5 +136,7 @@ namespace CollisionRacer
             _spriteBatch.End();
             base.Draw(gameTime);
         }
+
+        
     }
 }

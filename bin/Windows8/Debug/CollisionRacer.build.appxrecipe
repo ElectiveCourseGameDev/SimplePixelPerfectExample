@@ -8,13 +8,13 @@
     <PackageIdentityName>813690ed-b3e1-41a1-9fe8-7935c876e822</PackageIdentityName>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="c:\users\ebva.rhs\documents\visual studio 2013\Projects\MonoGameCollisionRacer\CollisionRacer\bin\Windows8\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\ebva.RHS\documents\visual studio 2013\Projects\MonoGameCollisionRacer\CollisionRacer\bin\Windows8\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="c:\users\ebva.rhs\documents\visual studio 2013\Projects\MonoGameCollisionRacer\CollisionRacer\bin\Windows8\Debug\CollisionRacer.exe">
+    <AppxPackagedFile Include="C:\Users\ebva.RHS\documents\visual studio 2013\Projects\MonoGameCollisionRacer\CollisionRacer\bin\Windows8\Debug\CollisionRacer.exe">
       <PackagePath>CollisionRacer.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\MSBuild\..\MonoGame\v3.0\Assemblies\Windows8\MonoGame.Framework.dll">
@@ -41,44 +41,47 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\MSBuild\..\MonoGame\v3.0\Assemblies\Windows8\SharpDX.XInput.dll">
       <PackagePath>SharpDX.XInput.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\ebva.rhs\documents\visual studio 2013\Projects\MonoGameCollisionRacer\CollisionRacer\Content\PixelPerfectCollision.xnb">
+    <AppxPackagedFile Include="C:\Users\ebva.RHS\documents\visual studio 2013\Projects\MonoGameCollisionRacer\CollisionRacer\Content\PixelPerfectCollision.xnb">
       <PackagePath>Content\PixelPerfectCollision.xnb</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\ebva.rhs\documents\visual studio 2013\Projects\MonoGameCollisionRacer\CollisionRacer\Content\car.xnb">
+    <AppxPackagedFile Include="C:\Users\ebva.RHS\documents\visual studio 2013\Projects\MonoGameCollisionRacer\CollisionRacer\Content\car.xnb">
       <PackagePath>Content\car.xnb</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\ebva.rhs\documents\visual studio 2013\Projects\MonoGameCollisionRacer\CollisionRacer\Assets\Logo.png">
+    <AppxPackagedFile Include="C:\Users\ebva.RHS\documents\visual studio 2013\Projects\MonoGameCollisionRacer\CollisionRacer\Content\MonoLog.xnb">
+      <PackagePath>Content\MonoLog.xnb</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ebva.RHS\documents\visual studio 2013\Projects\MonoGameCollisionRacer\CollisionRacer\Assets\Logo.png">
       <PackagePath>Assets\Logo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\ebva.rhs\documents\visual studio 2013\Projects\MonoGameCollisionRacer\CollisionRacer\Assets\SmallLogo.png">
+    <AppxPackagedFile Include="C:\Users\ebva.RHS\documents\visual studio 2013\Projects\MonoGameCollisionRacer\CollisionRacer\Assets\SmallLogo.png">
       <PackagePath>Assets\SmallLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\ebva.rhs\documents\visual studio 2013\Projects\MonoGameCollisionRacer\CollisionRacer\Assets\SplashScreen.png">
+    <AppxPackagedFile Include="C:\Users\ebva.RHS\documents\visual studio 2013\Projects\MonoGameCollisionRacer\CollisionRacer\Assets\SplashScreen.png">
       <PackagePath>Assets\SplashScreen.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\ebva.rhs\documents\visual studio 2013\Projects\MonoGameCollisionRacer\CollisionRacer\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\ebva.RHS\documents\visual studio 2013\Projects\MonoGameCollisionRacer\CollisionRacer\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\ebva.rhs\documents\visual studio 2013\Projects\MonoGameCollisionRacer\CollisionRacer\PixelPerfectCollision.png">
+    <AppxPackagedFile Include="C:\Users\ebva.RHS\documents\visual studio 2013\Projects\MonoGameCollisionRacer\CollisionRacer\PixelPerfectCollision.png">
       <PackagePath>PixelPerfectCollision.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\ebva.rhs\documents\visual studio 2013\Projects\MonoGameCollisionRacer\CollisionRacer\ColorList.txt">
+    <AppxPackagedFile Include="C:\Users\ebva.RHS\documents\visual studio 2013\Projects\MonoGameCollisionRacer\CollisionRacer\ColorList.txt">
       <PackagePath>ColorList.txt</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\ebva.rhs\documents\visual studio 2013\Projects\MonoGameCollisionRacer\CollisionRacer\bin\Windows8\Debug\App.xaml">
+    <AppxPackagedFile Include="C:\Users\ebva.RHS\documents\visual studio 2013\Projects\MonoGameCollisionRacer\CollisionRacer\bin\Windows8\Debug\App.xaml">
       <PackagePath>App.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\ebva.rhs\documents\visual studio 2013\Projects\MonoGameCollisionRacer\CollisionRacer\bin\Windows8\Debug\Common\StandardStyles.xaml">
+    <AppxPackagedFile Include="C:\Users\ebva.RHS\documents\visual studio 2013\Projects\MonoGameCollisionRacer\CollisionRacer\bin\Windows8\Debug\Common\StandardStyles.xaml">
       <PackagePath>Common\StandardStyles.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\ebva.rhs\documents\visual studio 2013\Projects\MonoGameCollisionRacer\CollisionRacer\bin\Windows8\Debug\GamePage.xaml">
+    <AppxPackagedFile Include="C:\Users\ebva.RHS\documents\visual studio 2013\Projects\MonoGameCollisionRacer\CollisionRacer\bin\Windows8\Debug\GamePage.xaml">
       <PackagePath>GamePage.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\ebva.rhs\documents\visual studio 2013\Projects\MonoGameCollisionRacer\CollisionRacer\bin\Windows8\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\ebva.RHS\documents\visual studio 2013\Projects\MonoGameCollisionRacer\CollisionRacer\bin\Windows8\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
