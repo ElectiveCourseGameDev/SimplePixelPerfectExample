@@ -18,6 +18,8 @@ namespace CollisionRacer
         private CarPlayer player;
 
         private Color _colorMagicRed = new Color(255,0,0);
+        private Color _colorMagicBlue = new Color(0,0,255);
+        private Color _colorMagicYellow = new Color(255, 255, 0);
 
         public MonoLog Log;
         private SpriteFont _spriteFont;
@@ -51,7 +53,7 @@ namespace CollisionRacer
             // Create a new SpriteBatch, which can be used to draw textures.
             _spriteBatch = new SpriteBatch(GraphicsDevice);
             _trackTexture = Content.Load<Texture2D>("PixelPerfectCollision");
-            _playerTexture = Content.Load<Texture2D>("car");
+            _playerTexture = Content.Load<Texture2D>("car3");
             _spriteFont = Content.Load<SpriteFont>("MonoLog");
             SetGame();
         }
@@ -97,7 +99,18 @@ namespace CollisionRacer
             Color color = _TrackColors[(int)player.PositionX, (int)player.PositionY];
             if (color.Equals(_colorMagicRed))
             {
-                Log.Write("new color(" + color.R + "," + color.G + "," +color.B +")");
+                Log.Write("Collision!");
+                //Log.Write("new color(" + color.R + "," + color.G + "," +color.B +")");
+            }
+            else if (color.Equals(_colorMagicBlue))
+            {
+                Log.Write("Sliiiiide!");
+                //Log.Write("new color(" + color.R + "," + color.G + "," +color.B +")");
+            }
+            else if (color.Equals(_colorMagicYellow))
+            {
+                Log.Write("Slooooowww!");
+                //Log.Write("new color(" + color.R + "," + color.G + "," +color.B +")");
             }
         }
 

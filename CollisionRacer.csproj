@@ -149,10 +149,10 @@
       <SubType>Designer</SubType>
     </AppxManifest>
     <None Include="CollisionRacer_TemporaryKey.pfx" />
+    <Content Include="Content\car.png" />
+    <Content Include="Content\car2.bmp" />
+    <Content Include="Content\car3.gif" />
     <Content Include="Content\PixelPerfectCollision.xnb">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\car.xnb">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Content\MonoLog.xnb">
