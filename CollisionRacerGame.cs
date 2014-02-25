@@ -53,21 +53,21 @@ namespace CollisionRacer
             _trackTexture = Content.Load<Texture2D>("PixelPerfectCollision");
             _playerTexture = Content.Load<Texture2D>("car");
             _spriteFont = Content.Load<SpriteFont>("MonoLog");
-            setGame();
+            SetGame();
         }
 
-        private void setGame()
+        private void SetGame()
         {
-            player = new CarPlayer(this, new Vector2(160,400), _playerTexture);
-            //player.Scale = new Vector2(2,2);
-            GameObjects.Add(player);
+            // read colors from level texture
+            _TrackColors = TextureTo2DArray(_trackTexture);
 
+            player = new CarPlayer(this, new Vector2(160,400), _playerTexture);
+            GameObjects.Add(player);
+            
             Log = new MonoLog(this, _spriteFont, Color.Black);
             GameObjects.Add(Log);
-
-            //Log.Write(player.PositionX.ToString());
-
-            _TrackColors = TextureTo2DArray(_playerTexture);
+            
+            
 
         }
 
@@ -87,18 +87,14 @@ namespace CollisionRacer
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
-            //Log.Write("COLLISION WITH RED PIXEL :-)");
             ColorCheck();
-            //Color c = _TrackColors[160, 400];
-            //Log.Write("Color: " + c.R + "," + c.G + "," +c.B  );
             UpdateAll(gameTime);
             base.Update(gameTime);
         }
 
         private void ColorCheck()
         {
-            Color color = _TrackColors[(int)player.PositionY, (int)player.PositionX];
-            //Color color = _TrackColors[(int)player.PositionX, (int)player.PositionY];
+            Color color = _TrackColors[(int)player.PositionX, (int)player.PositionY];
             if (color.Equals(_colorMagicRed))
             {
                 Log.Write("new color(" + color.R + "," + color.G + "," +color.B +")");
@@ -118,7 +114,6 @@ namespace CollisionRacer
             return colors2D;
         }
 
-
         /// <summary>
         /// This is called when the game should draw itself.
         /// </summary>
@@ -126,7 +121,6 @@ namespace CollisionRacer
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
-
             _spriteBatch.Begin();
             _spriteBatch.Draw(_trackTexture, new Vector2(0, 0), Color.White);
             foreach (SpriteObject spriteObject in GameObjects)
