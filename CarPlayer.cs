@@ -83,16 +83,16 @@ namespace CollisionRacer
                 if (Speed > 0) Speed -= 0.05f;
                 if (_keyboard.IsKeyDown(Keys.Left))
                 {
-                    Direction += 0.04f;
+                    Direction -= 0.04f;
                 }
                 if (_keyboard.IsKeyDown(Keys.Right))
                 {
-                    Direction -= 0.04f;
+                    Direction += 0.04f;
                 }
             }
-            PositionX -= Speed*(float) Math.Cos(Direction);
+            PositionX += Speed*(float) Math.Cos(Direction);
 
-            PositionY -= Speed*(float) Math.Sin(Direction);
+            PositionY += Speed*(float) Math.Sin(Direction);
         }
 
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
