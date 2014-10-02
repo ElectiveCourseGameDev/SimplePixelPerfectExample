@@ -3,9 +3,11 @@
   <PropertyGroup>
     <Machine>EASJ04</Machine>
     <WindowsUser>ebva</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>813690ed-b3e1-41a1-9fe8-7935c876e822</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\ebva.RHS\Documents\Visual Studio 2013\Projects\MonoGameCollisionRacer\CollisionRacer\obj\Debug\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="C:\Users\ebva.RHS\Documents\Visual Studio 2013\Projects\MonoGameCollisionRacer\CollisionRacer\bin\Windows8\Debug\AppxManifest.xml">

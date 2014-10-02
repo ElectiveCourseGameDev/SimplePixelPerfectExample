@@ -96,7 +96,10 @@ namespace CollisionRacer
 
         private void ColorCheck()
         {
+            
+
             Color color = _TrackColors[(int)player.PositionX, (int)player.PositionY];
+            //if (!color.Equals(Color.Transparent))
             if (color.Equals(_colorMagicRed))
             {
                 Log.Write("Collision!");
